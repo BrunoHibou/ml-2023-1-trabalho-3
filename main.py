@@ -10,7 +10,6 @@ new_data=pd.read_csv('ds_salaries.csv')
 
 le = preprocessing.LabelEncoder()
 scaler = StandardScaler()
-
 to_drop = ['salary_currency', 'remote_ratio', 'work_year', 'salary']
 data = new_data.drop(columns=to_drop)
 
